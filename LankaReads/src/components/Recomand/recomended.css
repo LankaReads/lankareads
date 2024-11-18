@@ -1,0 +1,185 @@
+/* General section styling */
+.recommend-section {
+    background-color: #f7f7f7;
+    color: #333;
+    padding: 40px 20px;
+}
+
+.container {
+    max-width: 80%;
+    margin: 0 auto;
+}
+
+/* Title styling */
+.recommend-title {
+    color: #f42d00;
+    font-size: 1.5rem;
+    margin-bottom: 30px;
+    font-weight: bold;
+}
+
+/* Card styling */
+.recommend-book-card {
+    border: none;
+    border-radius: 16px;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    overflow: hidden;
+    padding: 10px;
+}
+
+.recommend-book-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+}
+
+/* Image styling */
+.recommend-book-img {
+    max-height: 250px;
+    object-fit: cover;
+    border-bottom: 2px solid #f42d00;
+    width: 100%;
+}
+
+/* Card body styling */
+.recommend-book-body {
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    flex-grow: 1;
+}
+
+/* Title and price styling */
+.recommend-book-title {
+    font-size: 1.1rem;
+    color: #333;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+.recommend-book-price {
+    font-size: 1.2rem;
+    color: #555;
+    margin-bottom: 20px;
+}
+
+/* Button group styling */
+.recommend-button-group {
+    margin-top: auto;
+}
+
+/* Common button styles */
+.recommend-btn-visit {
+
+    padding: 10px !important;
+    border: none;
+    background-color: #f79c42 !important;
+    color: white;
+    border-radius: 10px !important;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    margin: 0;
+    
+  }
+.recommend-btn-visit:hover {
+    background-color: #0056b3;
+}
+
+.recommend-add-to-cart-btn {
+    
+    padding: 10px !important;
+    border: none;
+    background-color: #42a5f5 !important;
+    color: white;
+    border-radius: 10px !important;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    margin: 0;
+  }
+
+.recommend-add-to-cart-btn:hover {
+    background-color: #e62b00;
+}
+
+/* Responsive adjustments */
+@media (max-width: 992px) {
+    .container {
+        max-width: 90%;
+    }
+
+    .recommend-title {
+        font-size: 1.4rem;
+    }
+
+    .recommend-book-title {
+        font-size: 1rem;
+    }
+
+    .recommend-btn-visit,
+    .recommend-add-to-cart-btn {
+        padding: 6px 12px;
+        font-size: 0.9rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .container {
+        max-width: 100%;
+    }
+
+    .recommend-title {
+        font-size: 1.2rem;
+    }
+
+    .recommend-book-card {
+        margin-bottom: 20px;
+    }
+
+    .recommend-book-title {
+        font-size: 0.9rem;
+    }
+
+    .recommend-btn-visit,
+    .recommend-add-to-cart-btn {
+        padding: 4px 8px;
+        font-size: 0.8rem;
+    }
+}
+
+/* Dark mode styles */
+body.dark-mode .recommend-section {
+    background-color: #1e1e1e;
+    color: #d1d1d1;
+}
+
+body.dark-mode .recommend-book-card {
+    background-color: #2b2b2b;
+    color: #ffffff;
+}
+
+body.dark-mode .recommend-book-title, 
+body.dark-mode .recommend-book-price {
+    color: #ffffff;
+}
+
+body.dark-mode .recommend-btn-visit {
+    background-color: #007bff;
+    color: white;
+}
+
+body.dark-mode .recommend-btn-visit:hover {
+    background-color: #0056b3;
+}
+
+body.dark-mode .recommend-add-to-cart-btn {
+    background-color: #f42d00;
+    color: white;
+}
+
+body.dark-mode .recommend-add-to-cart-btn:hover {
+    background-color: #e62b00;
+}

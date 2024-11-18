@@ -1,0 +1,106 @@
+.register-page {
+    background-color: #f8f9fa;
+    min-height: 100vh;
+}
+
+.register-section {
+    padding: 20px;
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    z-index: 1050;
+    background: rgba(0, 0, 0, 0.5); /* Background blur effect */
+}
+
+.modal.show {
+    display: block;
+}
+
+.modal-dialog {
+    pointer-events: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.modal-dialog .modal-content {
+    pointer-events: auto;
+}
+
+.modal-content {
+    border-radius: 12px;
+    padding: 20px;
+    position: relative;
+    box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.2);
+    background-color: #fff;
+    width: 100%;
+    max-width: 400px; /* Ensure card-like width */
+}
+
+.modal-header {
+    border-bottom: 1px solid #dee2e6;
+    text-align: center;
+    justify-content: center;
+}
+
+.modal-footer {
+    border-top: 1px solid #dee2e6;
+}
+
+.close {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #000;
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    cursor: pointer;
+}
+
+.login-card {
+    border-radius: 12px;
+}
+
+.btn-danger {
+    background-color: #f42d00;
+    border-color: #f42d00;
+}
+
+.btn-danger:hover {
+    background-color: #c62828;
+    border-color: #c62828;
+}
+
+.form-control {
+    pointer-events: auto; /* Ensure inputs are clickable */
+}
+
+.google-btn,
+.facebook-btn {
+    width: 60%;
+    margin: 10px auto;
+    transform: scale(0.9);
+}
+
+.google-btn:hover,
+.facebook-btn:hover {
+    transform: scale(1);
+    transition: transform 0.3s ease;
+}
+
+.text-center a {
+    color: #f42d00;
+    text-decoration: none;
+}
+
+.text-center a:hover {
+    text-decoration: underline;
+}

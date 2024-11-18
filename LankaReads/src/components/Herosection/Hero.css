@@ -1,0 +1,163 @@
+.hero-container {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.hero-image {
+  width: 100%;
+  height: 100vh;
+  object-fit: cover;
+}
+
+/* Responsive text size */
+.hero-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5); /* Dark overlay */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  text-align: center;
+  padding: 20px;
+}
+
+/* Responsive font sizes using Bootstrap */
+.welcome {
+  font-size: 2.5rem; /* Adjust with media query for mobile */
+  font-family: 'Arial', sans-serif;
+  font-weight: bold;
+  color: #f42d00; /* Orange for contrast */
+  margin-top: 60px;
+}
+
+.lanka {
+  font-size: 3.5rem; /* Adjust with media query for mobile */
+  font-family: 'Georgia', serif;
+  font-weight: bold;
+  margin: 20px 0;
+  color: #fff; /* White for better visibility */
+}
+
+/* Adjust text size for smaller screens */
+@media (max-width: 768px) {
+  .welcome {
+    font-size: 2rem;
+  }
+  
+  .lanka {
+    font-size: 2.5rem;
+  }
+  
+  .description {
+    font-size: 1rem;
+    max-width: 90%; /* Reduced width for smaller screens */
+  }
+}
+
+.description {
+  font-size: 1.1rem;
+  font-family: 'Verdana', sans-serif;
+  margin: 15px 0;
+  max-width: 700px;
+}
+
+/* Button Container */
+.hero-buttons-container {
+  margin: 12px 0;
+  width: 100%; /* Ensure buttons fill space on mobile */
+  max-width: 500px;
+  display: flex;
+  justify-content: space-around;
+}
+
+/* Responsive buttons for smaller screens */
+.reader-btn, .author-btn {
+  font-size: 1.1rem;
+  padding: 12px 25px;
+  border-radius: 20px;
+  background-color: transparent; /* Orange color */
+  border: 3px solid #d72300;
+  color: white;
+  transition: transform 0.3s, background-color 0.3s;
+}
+
+.reader-btn:hover, .author-btn:hover {
+  background-color: #d72300; /* Darker orange on hover */
+  transform: scale(1.05);
+  font-weight: bold;
+}
+
+/* Adjust button width for smaller screens */
+@media (max-width: 768px) {
+  .reader-btn, .author-btn {
+    width: 100%; /* Buttons will take full width on small screens */
+    margin-bottom: 15px; /* Space between buttons on mobile */
+  }
+}
+
+/* Card slider container */
+.card-slider-container {
+  margin-top: -30px;
+}
+
+/* Author modal */
+.author-modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.8); /* Darker background for dark mode */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.modal-content {
+  background: #333; /* Dark background for modal */
+  color: white;
+  padding: 30px;
+  border-radius: 12px;
+  text-align: center;
+  box-shadow: 0px 15px 50px rgba(0, 0, 0, 0.4);
+  animation: modalFadeIn 0.5s ease-in-out;
+}
+
+.modal-content p {
+  font-size: 1.3rem;
+  margin-bottom: 20px;
+}
+
+.modal-content button {
+  margin: 10px;
+  padding: 12px 25px;
+  border-radius: 8px;
+  background-color: #f42d00; /* Orange button in the modal */
+  color: white;
+  border: none;
+  transition: transform 0.3s, background-color 0.3s;
+}
+
+.modal-content button:hover {
+  background-color: #d72300; /* Darker orange on hover */
+  transform: scale(1.05);
+}
+
+@keyframes modalFadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

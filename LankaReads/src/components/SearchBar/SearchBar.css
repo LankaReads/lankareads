@@ -1,0 +1,77 @@
+.search-bar {
+  width: 80%;
+  max-width: 100%;
+  margin: auto;
+}
+
+.search-bar .input-group-prepend .btn {
+  background-color: #FF6347;
+  color: white;
+  border: none;
+  height: 40px;
+  font-size: 0.9rem;
+}
+
+.search-bar .input-group-prepend .btn:hover {
+  background-color: #FF4500;
+}
+
+.search-bar .input-group .form-control {
+  border: none;
+  max-width: 280px;
+  border-radius: 10px;
+}
+
+.search-bar .input-group-append .btn {
+  border: none;
+  background-color: #f42d00;
+  border-radius: 10px;
+}
+
+.search-bar .input-group-append .btn i {
+  font-size: 1rem;
+  color: white;
+}
+
+.search-input {
+  max-width: 280px;
+  margin-left: 10px;
+}
+
+.btnsearch {
+  background-color: #f42d00;
+  border-color: #f42d00;
+  color: white;
+  border-radius: 10px;
+  padding: 8px 12px;
+}
+
+.btnsearch:hover {
+  background-color: #FF4500;
+  border-color: #FF4500;
+}
+
+.dark-mode .search-input {
+  background-color: #666;
+  color: #ffffff !important;
+}
+
+.dark-mode .btnsearch {
+  color: #e0e0e0;
+}
+
+.dropdown-menu {
+  width: 100%;
+}
+.search-bar {
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+.search-input {
+  margin-right: 5px; /* Adding a small gap between search icon and text area */
+}
+
+.btnsearch {
+  padding: 0.375rem 0.75rem;
+}

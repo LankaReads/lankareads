@@ -1,0 +1,22 @@
+.whatsapp-button {
+    position: fixed;
+    bottom: 20px; /* Adjust the distance from the bottom */
+    left: 20px;   /* Adjust the distance from the left */
+    background-color: transparent;
+    color: #f42d00; /* Orange text color */
+    border: 2px solid #f42d00; /* Orange border */
+    border-radius: 30px;
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    z-index: 1000;
+}
+
+.whatsapp-button:hover {
+    background-color: #f42d00; /* Orange background on hover */
+    color: white; /* White text color on hover */
+    transform: scale(1.1); /* Slightly enlarge the button on hover */
+    box-shadow: 0px 10px 40px rgba(244, 45, 0, 0.2); /* Add shadow effect on hover */
+}

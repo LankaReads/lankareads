@@ -1,0 +1,72 @@
+.subscription {
+    background-image: url("https://t3.ftcdn.net/jpg/04/27/15/08/360_F_427150821_oQOZiOLP6lnWQdUmUG0YgQiTUsjmaGwE.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+    overflow: hidden;
+    padding: 40px;
+    background-color: rgba(0, 0, 0, 0.6);
+}
+
+.subscription::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+}
+
+.subscription .row {
+    position: relative;
+    z-index: 1;
+}
+
+.subscription-title {
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+}
+
+.btnsubscribe {
+    background-color: #f42d00;
+    border-color: #f42d00;
+    color: white;
+    border: 2px solid #f42d00;
+    border-radius: 10px;
+    font-size: 1rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease;
+    cursor: pointer;
+}
+
+.btnsubscribe:hover {
+    background-color: white;
+    color: #f42d00;
+    border-color: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+@media (max-width: 768px) {
+    .subscription-title {
+        font-size: 1.6rem;
+    }
+    .form-control {
+        max-width: 180px;
+    }
+}
+
+@media (max-width: 576px) {
+    .subscription-title {
+        font-size: 1.4rem;
+    }
+    .form-control {
+        max-width: 160px;
+    }
+    .btnsubscribe {
+        font-size: 0.8rem;
+        padding: 6px 15px;
+    }
+}

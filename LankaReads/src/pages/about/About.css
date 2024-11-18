@@ -1,0 +1,41 @@
+/* General Styles */
+.jumbotron img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Team Member Styles */
+.rounded-circle {
+    border-radius: 50%;
+}
+
+.shadow-lg {
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .jumbotron {
+        padding: 30px 0;
+    }
+
+    .img-fluid {
+        width: 80%;
+        height: auto;
+    }
+
+    .rounded-circle {
+        width: 120px;
+        height: 120px;
+    }
+
+    .shadow-lg {
+        box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.2);
+    }
+}
+
+@media (min-width: 769px) {
+    .container {
+        max-width: 80%;
+    }
+}

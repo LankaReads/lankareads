@@ -1,0 +1,65 @@
+/* Light Mode Styles */
+.backgrounds2 {
+    margin-top: 0%;
+    padding-top: 0;
+    padding: 20px;
+    background-color: #f8f9fa; /* Light background */
+}
+
+.add-btn {
+
+    padding: 10px !important;
+    border: none;
+    background-color: #0056b3 !important;
+    color: white;
+    border-radius: 10px !important;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    margin: 0;
+  }
+
+  .visit-btn {
+
+    font-size: 15px;
+    padding: 10px !important;
+    border: none;
+    background-color: #f79c42 !important;
+    color: white;
+    border-radius: 10px !important;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    margin: 0;
+  }
+.add-btn:hover {
+    border: 2px solid #f42d00; /* Border color on hover */
+    background-color: white; /* Button background color on hover */
+}
+
+.book-container {
+    display: flex;
+    justify-content: center;
+}
+
+/* Dark Mode Styles */
+body.dark-mode .backgrounds2 {
+    background-color: #1e1e1e; /* Dark background for the container */
+    color: #e0e0e0; /* Light text color */
+}
+
+
+
+body.dark-mode .card {
+    background-color: #2c2c2c; /* Dark card background */
+    color: #e0e0e0; /* Light text color */
+    border: 1px solid #444; /* Darker border for cards */
+}
+
+body.dark-mode .card-img-top {
+    filter: brightness(0.8); /* Dim the image for dark mode */
+}
+
+body.dark-mode .card-title {
+    color: #e0e0e0; /* Light text color for card titles */
+}
+
+body.dark-mode .card-text {
+    color: #e0e0e0; /* Light text color for card text */
+}

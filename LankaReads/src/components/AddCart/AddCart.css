@@ -1,0 +1,156 @@
+/* Base styles for the cart count badge */
+.cart-count {
+  position: absolute;
+  top: -5px;
+  right: -5px;
+  background-color: #f42d00;
+  color: white;
+  border-radius: 50%;
+  padding: 0.2rem 0.6rem;
+  font-size: 0.75rem;
+}
+
+/* Base styles for the cart item */
+.cart-item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+  border-bottom: 1px solid #ddd;
+  padding: 10px 0;
+}
+
+/* Image styling for cart items */
+.cart-item img {
+  width: 40px;
+  height: 60px;
+  object-fit: cover;
+  border-radius: 5px;
+}
+
+/* Styles for the offcanvas container */
+.offcanvas-container {
+  width: 45%;
+}
+
+/* Dark mode styles */
+.dark-mode .offcanvas-container {
+  background-color: #2e2e2e; /* Dark background */
+  color: #e0e0e0; /* Light text color */
+}
+
+.dark-mode .cart-item {
+  color: #e0e0e0; /* Light text color for items */
+}
+
+.dark-mode .btn-close {
+  filter: invert(1);
+}
+
+.dark-mode .total-price {
+  color: #e0e0e0; /* Light text color */
+}
+
+.dark-mode .btn11 {
+  background-color: #f42d00; /* Button background color */
+  color: white; /* Button text color */
+}
+
+.dark-mode .price-quantity {
+  color: #e0e0e0; /* Light text color for price and quantity */
+}
+
+/* Styles for the visit button */
+.visit-btn {
+  padding: 5px 10px;
+  font-size: 0.875rem;
+  transition: background-color 0.3s ease;
+}
+
+.visit-btn:hover {
+  background-color: #007bff;
+  color: #fff;
+}
+
+/* Styles for the total price and checkout button */
+.total-price {
+  font-size: 1.2rem;
+}
+
+.btn11 {
+  background-color: #f42d00;
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 20px;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.btn11:hover {
+  background-color: #d02600;
+  transform: scale(1.05);
+}
+/* Base styles for the cart count badge */
+.cart-count {
+  position: absolute;
+  top: -5px;
+  right: -5px;
+  background-color: #f42d00;
+  color: white;
+  border-radius: 50%;
+  padding: 0.2rem 0.6rem;
+  font-size: 0.75rem;
+}
+
+/* Base styles for the cart item */
+.cart-item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+  border-bottom: 1px solid #ddd;
+  padding: 10px 0;
+}
+
+/* Image styling for cart items */
+.cart-item img {
+  width: 40px;
+  height: 60px;
+  object-fit: cover;
+  border-radius: 5px;
+}
+
+/* Styles for the offcanvas container */
+.offcanvas-container {
+  width: 45%;
+}
+
+/* Dark mode styles */
+.dark-mode .offcanvas-container {
+  background-color: #2e2e2e; /* Dark background */
+  color: #e0e0e0; /* Light text color */
+}
+
+.dark-mode .cart-item {
+  color: #e0e0e0; /* Light text color for items */
+}
+
+.dark-mode .btn-close {
+  filter: invert(1);
+}
+
+.dark-mode .total-price {
+  color: #e0e0e0; /* Light text color */
+}
+
+.dark-mode .btn11 {
+  background-color: #f42d00; /* Button background color */
+  color: white; /* Button text color */
+}
+
+.dark-mode .price-quantity {
+  color: #e0e0e0 !important; /* Light text color for price and quantity */
+}
+
+/* Styles for the visit button */
+.visit-btn {
+  padding: 5px 10px;
+  font-size: 0.8rem;
+}

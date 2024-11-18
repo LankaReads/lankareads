@@ -1,0 +1,70 @@
+/* Light mode styles */
+.catogary-btn {
+  background-color: #FF6347;
+  color: white;
+  border: none;
+  height: 40px;
+  margin-top: 15px;
+}
+
+.catogary-btn:hover {
+  background-color: #FF4500;
+}
+
+.search-btn2 {
+  border: none;
+  font-size: 1.2rem;
+  background-color: #FF4500;
+  color: black;
+}
+
+.search-btn2:hover {
+  color: white;
+  background-color: #ff4500;
+}
+
+.book-fullpage {
+  background-color: hsl(0, 0%, 88%);
+}
+
+.book-fullpage {
+  min-height: 100vh;
+}
+
+.catogary-btn {
+  margin-right: 5px;
+}
+
+.booksearchinput {
+  border-radius: 5px;
+  margin-right: 5px;
+}
+
+.search-btn2 {
+  padding: 0.375rem 0.75rem;
+}
+
+/* Dark mode styles */
+body.dark-mode .book-fullpage {
+  background-color: hsl(0, 0%, 20%);
+}
+
+body.dark-mode .booksearchinput {
+  background-color: #666;
+  color: #ffffff !important;
+}
+
+/* Dark mode styles for dropdown menu */
+body.dark-mode .dropdown-menu {
+  background-color: #333; /* Dark background for dropdown menu */
+  color: #fff; /* White text for dropdown menu */
+}
+
+body.dark-mode .dropdown-menu .dropdown-item {
+  color: #ddd; /* Lighter text for dropdown items */
+}
+
+body.dark-mode .dropdown-menu .dropdown-item:hover {
+  background-color: #555; /* Highlight color on hover */
+  color: #fff; /* Text color on hover */
+}

@@ -1,0 +1,82 @@
+/* Contact.css */
+
+/* Jumbotron styling */
+.jumbotron {
+    background-color: #f42d00;
+    padding: 50px 0;
+  }
+  
+  .jumbotron img {
+    max-width: 100%;
+    height: auto;
+  }
+  
+  /* Container styling */
+  .contact-container {
+    box-shadow: 0px 10px 40px rgba(244, 45, 0, 0.2);
+    padding: 20px;
+    border-radius: 10px;
+  }
+  
+  .contact-container h1 {
+    color: #f42d00;
+    margin-bottom: 30px;
+  }
+  
+  .contact-container .form-label {
+    font-weight: bold;
+  }
+  
+  .contact-container .form-control {
+    border-radius: 5px;
+  }
+  
+  .contact-container .btn-danger {
+    background-color: #f42d00;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    cursor: pointer;
+  }
+  
+  .contact-container .btn-danger:hover {
+    background-color: #e32d00;
+  }
+  
+  /* Social icon styling */
+  .social-icon {
+    font-size: 2rem;
+    transition: color 0.3s;
+  }
+  
+  .social-icon:hover {
+    color: #333;
+  }
+  
+  /* Address styling */
+  .address {
+    font-style: normal;
+  }
+  
+  /* Location Map styling */
+  .location-map {
+    max-width: 100%;
+    height: auto;
+    margin-top: 20px;
+  }
+  
+  /* Responsive adjustments */
+  @media (max-width: 768px) {
+    .contact-container {
+      padding: 15px;
+    }
+    
+    .jumbotron {
+      padding: 30px 0;
+    }
+    
+    .social-icon {
+      font-size: 1.5rem;
+    }
+  }
+  

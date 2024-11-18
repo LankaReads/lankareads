@@ -1,0 +1,147 @@
+/* Base Styles */
+.open-pages {
+    background-color: #f8f9fa; /* Light background color for the page */
+    min-height: 100vh;
+    color: #212529; /* Default text color */
+  }
+  
+  .book-details-card {
+    background-color: #ffffff; /* White background for the card */
+  }
+  
+  .book-image {
+    max-width: 100%;
+    height: auto; /* Maintain aspect ratio */
+  }
+  
+  .text-muted {
+    color: #6c757d; /* Default muted text color */
+  }
+  
+  /* Headings */
+  .heading-secondary {
+    margin-bottom: 1rem;
+  }
+  
+  /* Container Padding */
+  .container {
+    padding: 0;
+  }
+  
+  /* Buttons */
+  .btn-primary, .btn-success {
+    padding: 8px 16px;
+    border-radius: 20px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    border: none;
+  }
+  
+  .btn-primary {
+    background-color: #f42d00;
+    color: white;
+  }
+  
+  .btn-primary:hover {
+    background-color: #e03d00;
+    border: 1px solid #f42d00;
+  }
+  
+  .btn-success {
+    background-color: #28a745;
+    color: white;
+  }
+  
+  .btn-success:hover {
+    background-color: #218838;
+    border: 1px solid #28a745;
+  }
+  
+  /* Responsive Styles */
+  @media (max-width: 992px) {
+    .book-details-card {
+      padding: 1.5rem;
+      max-width: 90%; /* Adjusted to 90% width */
+    }
+  
+    .book-image {
+      max-width: 80%;
+    }
+  
+    .btn-primary, .btn-success {
+      padding: 6px 12px;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .book-details-card {
+      padding: 1rem;
+      max-width: 100%; /* Full width on small screens */
+    }
+  
+    .book-image {
+      max-width: 90%;
+    }
+  
+    .btn-primary, .btn-success {
+      padding: 5px 10px;
+    }
+  }
+  
+  @media (max-width: 576px) {
+    .book-details-card {
+      padding: 0.5rem;
+      max-width: 100%; /* Full width on very small screens */
+    }
+  
+    .book-image {
+      max-width: 100%;
+    }
+  
+    .btn-primary, .btn-success {
+      padding: 4px 8px;
+      font-size: 0.8rem;
+    }
+  }
+  
+  /* Dark Mode Styles */
+  .dark-mode .open-pages {
+    background-color: #1e1e1e; /* Dark background color for the page */
+    color: #e0e0e0; /* Light text color for dark mode */
+  }
+  
+  .dark-mode .book-details-card {
+    background-color: #2e2e2e; /* Darker background color for the card */
+    border: 1px solid #444; /* Subtle border for dark mode */
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.5); /* Darker shadow for dark mode */
+  }
+  
+  .dark-mode .btn-primary {
+    background-color: #ff6f6f; /* Dark mode button color */
+  }
+  
+  .dark-mode .btn-primary:hover {
+    background-color: #e05656;
+    border: 1px solid #ff6f6f;
+  }
+  
+  .dark-mode .btn-success {
+    background-color: #60c5ba; /* Dark mode button color */
+  }
+  
+  .dark-mode .btn-success:hover {
+    background-color: #4ab89e;
+    border: 1px solid #60c5ba;
+  }
+  
+  .dark-mode .text-muted {
+    color: #adb5bd; /* Lighter muted text color for dark mode */
+  }
+  
+  .dark-mode .heading-secondary {
+    color: #e0e0e0; /* Light color for headings in dark mode */
+  }
+  
+  .dark-mode .book-image {
+    filter: brightness(0.9); /* Slightly dim images in dark mode */
+  }
+  

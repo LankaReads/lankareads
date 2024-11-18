@@ -1,0 +1,27 @@
+.admin-dashboard {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .book-img {
+    max-width: 50px;
+    max-height: 50px;
+  }
+  
+  .form-book {
+    background-color: #f8f9fa;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 10px 40px rgba(0, 0, 0, 0.1);
+  }
+  
+  .table th, .table td {
+    vertical-align: middle;
+    text-align: center;
+  }
+  
+  .table img {
+    border-radius: 5px;
+    object-fit: cover;
+  }
+  

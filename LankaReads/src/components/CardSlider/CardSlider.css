@@ -1,0 +1,207 @@
+/* Carousel item styling */
+.card-slider-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Card slider container */
+.custom-card-slider-container {
+  position: relative;
+  width: 100%;
+  padding: 0;
+  overflow: hidden;
+}
+
+/* Carousel item padding */
+.custom-card-slider-container .card-slider-item {
+  padding: 10px;
+}
+
+/* Book card styling */
+.custom-book-card {
+  width: 200px;
+  height: auto;
+  margin: 10px;
+  display: flex;
+  flex-direction: column;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  text-align: center;
+  transition: transform 0.3s ease;
+}
+
+.custom-book-card:hover {
+  transform: scale(1.05);
+}
+
+/* Card image styling */
+.custom-card-image {
+  width: 100%;
+  height: 130px;
+  object-fit: cover;
+}
+
+/* Card body styling */
+.custom-card-body {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 8px;
+  height: 150px;
+}
+
+/* Card title row styling */
+.custom-card-title-row {
+  margin-bottom: 4px;
+}
+
+/* Card title styling */
+.custom-card-title {
+  margin: 0;
+  font-size: 14px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+/* Card details row styling */
+.custom-card-details-row {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+/* Card price styling */
+.custom-card-price {
+  margin: 4px 0;
+  font-size: 12px;
+}
+
+/* Button group styling */
+.custom-button-group {
+  display: flex;
+  justify-content: space-between;
+}
+
+/* Visit button styling */
+.custom-btn-visit {
+  font-size: 12px;
+  padding: 10px !important;
+  border: none;
+  background-color: #f79c42 !important;
+  color: white;
+  border-radius: 10px !important;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+  margin: 0;
+}
+
+.custom-btn-visit:hover {
+  background-color: #f47216;
+  transform: translateY(-2px);
+}
+
+/* Add to Cart button styling */
+.custom-btn-add-to-cart {
+  font-size: 12px;
+  padding: 10px !important;
+  border: none;
+  background-color: #42a5f5 !important;
+  color: white;
+  border-radius: 10px !important;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+  margin: 0;
+}
+
+.custom-btn-add-to-cart:hover {
+  background-color: #1e88e5;
+  transform: translateY(-2px);
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .custom-card-slider-container .card-slider-item {
+    padding: 8px;
+  }
+
+  .custom-book-card {
+    width: 180px;
+  }
+
+  .custom-card-image {
+    height: 110px;
+  }
+
+  .custom-card-title {
+    font-size: 13px;
+  }
+
+  .custom-card-price {
+    font-size: 11px;
+  }
+
+  .custom-btn-visit, .custom-btn-add-to-cart {
+    font-size: 11px;
+    padding: 5px 10px;
+  }
+}
+
+@media (max-width: 576px) {
+  .custom-book-card {
+    width: 100%;
+  }
+
+  .custom-card-image {
+    height: 90px;
+  }
+
+  .custom-card-title {
+    font-size: 12px;
+  }
+
+  .custom-card-price {
+    font-size: 10px;
+  }
+
+  .custom-btn-visit, .custom-btn-add-to-cart {
+    font-size: 10px;
+    padding: 4px 8px;
+  }
+}
+
+/* Dark mode styles */
+body.dark-mode .custom-book-card {
+  background-color: #2b2b2b;
+  color: #ffffff;
+  border: 1px solid #444;
+}
+
+body.dark-mode .custom-card-title {
+  color: #ffffff;
+}
+
+body.dark-mode .custom-card-price {
+  color: #d1d1d1;
+}
+
+body.dark-mode .custom-btn-visit {
+  background-color: #e68600;
+}
+
+body.dark-mode .custom-btn-visit:hover {
+  background-color: #c76a00;
+}
+
+body.dark-mode .custom-btn-add-to-cart {
+  background-color: #1976d2;
+}
+
+body.dark-mode .custom-btn-add-to-cart:hover {
+  background-color: #0d47a1;
+}
+
+body.dark-mode .custom-card-image {
+  border-bottom: 1px solid #f79c42;
+}

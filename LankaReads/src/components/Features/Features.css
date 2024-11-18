@@ -1,0 +1,65 @@
+/* General icon styling */
+.feature-icon {
+    border: 2px solid #ff6600;
+    padding: 8px;
+    border-radius: 50%;
+    color: #ff6600;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.feature-icon:hover {
+    transform: scale(1.1);
+    box-shadow: 0 5px 15px rgba(255, 102, 0, 0.4);
+}
+
+/* General background styling */
+.feature-background {
+    background-color: #ffffff;
+    padding: 40px 20px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.feature-title {
+    font-size: 1.75rem;
+    font-weight: bold;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .feature-icon {
+        width: 30px;
+        height: 30px;
+    }
+
+    .feature-title {
+        font-size: 1.5rem;
+    }
+
+    p {
+        font-size: 0.9rem;
+    }
+}
+
+/* Dark mode styling */
+body.dark-mode .feature-background {
+    background-color: #1e1e1e;
+    color: #ffffff;
+}
+
+body.dark-mode .feature-icon {
+    border-color: #f42d00;
+    color: #f42d00;
+}
+
+body.dark-mode .feature-icon:hover {
+    transform: scale(1.1);
+    box-shadow: 0 5px 15px rgba(244, 45, 0, 0.4);
+}
+
+body.dark-mode .feature-title {
+    color: #f42d00;
+}
+
+body.dark-mode p {
+    color: #d1d1d1;
+}

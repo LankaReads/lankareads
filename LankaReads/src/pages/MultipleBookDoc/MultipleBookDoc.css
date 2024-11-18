@@ -1,0 +1,16 @@
+.multiple-book-doc .book-image {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+    margin-bottom: 15px;
+  }
+  
+  .multiple-book-doc .card {
+    border: none;
+    transition: transform 0.3s ease;
+  }
+  
+  .multiple-book-doc .card:hover {
+    transform: translateY(-5px);
+  }
+  

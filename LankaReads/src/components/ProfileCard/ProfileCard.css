@@ -1,0 +1,77 @@
+/* Container for the profile card */
+
+
+/* Inner structure of the profile card */
+.profile-card-inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* Profile picture styling */
+.profile-pic-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.profile-pic {
+  max-width: 30px; /* Scaled down picture size */
+  border-radius: 50%;
+  
+}
+
+/* Profile info styling */
+.profile-info {
+  display: flex;
+  flex-direction: column;
+  
+}
+
+.profile-card-body {
+  padding: 8px; /* Scaled down padding */
+  margin-top: 15px;
+}
+
+
+.profile-card-title {
+  font-size: 14px; /* Scaled down font size */
+  font-weight: bold;
+  margin-bottom: 4px; /* Scaled down margin */
+  transition: color 0.3s; /* Smooth transition for dark mode */
+}
+
+.profile-card-text {
+  color: gray;
+  font-size: 12px; /* Scaled down font size */
+  transition: color 0.3s; /* Smooth transition for dark mode */
+}
+
+/* Dark mode styles */
+.dark-mode .profile-card-title {
+  color: #f0f0f0; /* Light color for dark mode */
+}
+
+.dark-mode .profile-card-text {
+  color: #b0b0b0; /* Light gray for dark mode */
+}
+
+/* Responsive adjustments */
+@media (max-width: 576px) {
+  .profile-card-container {
+    margin-left: 0; /* Remove margin on small screens */
+    padding: 5px; /* Adjust padding for small screens */
+  }
+
+  .profile-card-title {
+    font-size: 12px; /* Further scaled down font size */
+  }
+
+  .profile-card-text {
+    font-size: 10px; /* Further scaled down font size */
+  }
+
+  .profile-pic {
+    max-width: 25px; /* Further scaled down picture size */
+  }
+}

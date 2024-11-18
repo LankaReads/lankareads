@@ -1,0 +1,55 @@
+/* General container styling */
+.overview-container {
+    padding: 20px 10px; /* Reduced padding */
+}
+
+/* Icon styling */
+.text-orange {
+    color: #f42d00;
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.text-orange:hover {
+    transform: scale(1.1); /* Slight scale on hover */
+}
+
+/* Statistic number and text styling */
+.stat-number {
+    font-size: 1.8rem; /* Reduced font size */
+    color: #333;
+    margin-bottom: 5px;
+}
+
+.stat-text {
+    font-size: 0.9rem; /* Reduced font size */
+    color: #555;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .stat-number {
+        font-size: 1.5rem; /* Further reduce on smaller screens */
+    }
+
+    .stat-text {
+        font-size: 0.8rem; /* Further reduce on smaller screens */
+    }
+
+    .text-orange {
+        font-size: 35px; /* Smaller icons on small screens */
+    }
+}
+
+@media (max-width: 576px) {
+    .stat-number {
+        font-size: 1.3rem; /* Further reduce on very small screens */
+    }
+
+    .stat-text {
+        font-size: 0.7rem; /* Further reduce on very small screens */
+    }
+
+    .text-orange {
+        font-size: 30px; /* Smaller icons on very small screens */
+    }
+}

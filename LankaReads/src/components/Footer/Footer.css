@@ -1,0 +1,46 @@
+footer {
+    font-size: 0.9rem; /* Adjust font size for a more compact look */
+}
+
+.logo2 {
+    width: 160px; /* Reduced size to 80% of the original */
+    height: auto; /* Maintain aspect ratio */
+    margin-bottom: 10px;
+}
+
+.pp {
+    font-size: 0.9rem;
+}
+
+.text-reset {
+    color: #f42d00;
+}
+
+.text-reset:hover {
+    color: #e63d00; /* Slightly different shade on hover */
+    text-decoration: none;
+}
+
+@media (max-width: 768px) {
+    .logo2 {
+        width: 140px;
+    }
+}
+
+@media (max-width: 576px) {
+    .logo2 {
+        width: 120px;
+    }
+
+    .text-uppercase {
+        font-size: 0.8rem;
+    }
+
+    .text-reset {
+        font-size: 0.8rem;
+    }
+
+    .pp {
+        font-size: 0.8rem;
+    }
+}
